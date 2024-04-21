@@ -1,0 +1,83 @@
+/* Reset generale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Stile generale per il corpo della pagina */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Colore di sfondo generale */
+    color: #333;
+  }
+  
+  /* Stile per il contenitore principale */
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Stile per il titolo */
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Stile per i pulsanti */
+  button {
+    background-color: #4CAF50; /* Colore pulsanti */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Colore pulsanti al passaggio del mouse */
+  }
+  
+  /* Stile per le caselle di testo */
+  input[type="text"],
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Colore bordo caselle di testo */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #80bdff; /* Colore bordo caselle di testo in stato di focus */
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Stile per le email nella lista */
+  .sent-email {
+    border: 1px solid #ccc; /* Colore bordo email nella lista */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Stile per evidenziare le email speciali */
+  .special {
+    background-color: #ffecb3; /* Colore sfondo email speciali */
+  }
+  

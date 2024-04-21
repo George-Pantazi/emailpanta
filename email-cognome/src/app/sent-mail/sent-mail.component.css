@@ -1,0 +1,23 @@
+.special {
+    background-color: #ffecb3; /* Evidenzia lo sfondo per le email speciali */
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker Green */
+  }
+  
+  .sent-email {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  

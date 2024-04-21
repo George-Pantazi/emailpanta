@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantazi's Email Service</title>
+    <style>
+        /* Your CSS styles here */
+        button[type="submit"] {
+        
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+      
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1><b>servizio email Pantazi</b></h1>
+</div>
+
+<div class="main-container">
+    <div class="email-container">
+        <div class="compose">
+            <h2>scrittura messsaggi</h2>
+            <form id="emailForm">
+                <!-- Your form fields here -->
+            </form>
+        </div>
+        <div class="card-body">
+          <app-email-form (emailSent)="sentMail.addSentEmail($event)"></app-email-form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          <h2 class="card-title text-center">Email inviate</h2>
+        </div>
+        <div class="card-body bg-light">
+          <app-sent-mail #sentMail></app-sent-mail>
+        </div>
+      </div>
+    </div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
